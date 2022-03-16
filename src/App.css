@@ -1,0 +1,138 @@
+.App {
+  text-align: center;/*这句话会导致子div的排版出现问题，字总是居中后再往左移*/
+  margin-top:0;
+  margin-bottom: 0;
+  /* padding:0px;
+  margin:0px; */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.roll {
+  height:2000px;
+  width:1080px;
+  overflow: hidden;
+  overflow-y: scroll;
+  display:block;
+}
+.rollwx {
+  height:2100px;
+  width:1080px;
+  overflow: hidden;
+  overflow-y: scroll;
+  display:block;
+}
+
+.just-here {
+  height:25px;
+  background-color: #F3F7FA;
+}
+.ZT {
+  height:110px;
+  background-color: #F3F7FA;
+  font-size: 49px;
+  
+  color:#878787;
+
+  text-align: left;
+  margin-top:0px;
+  margin-bottom: 0px;
+}
+.ZTI {
+  position: relative;
+  left: 40px;
+  top: 30px;
+  color:#878787;
+  font-family: "\5FAE\8F6F\96C5\9ED1",sans-serif;
+  margin-top:0px;
+  margin-bottom: 0px;
+}
+.title {
+  height:110px;
+  background-color: #F3F7FA;
+  font-size: 38px;
+  color:#878787;
+  font-family: "\5FAE\8F6F\96C5\9ED1",sans-serif;
+
+  text-align: left;/*App爷爷造成的问题，由title爸爸再次定义，就可以在文字儿子那里出结果了*/
+  margin-top:0px;
+  margin-bottom: 0px;
+}
+.titleI {
+  position: relative;
+  left: 40px;
+  top: 36px;
+  color:#878787;
+  margin-top:0px;
+  margin-bottom: 0px;
+}
+.info {
+  height:130px;
+  background-color: #ffffff;
+  font-size: 37px;
+  color:#606266;
+  font-family: "\5FAE\8F6F\96C5\9ED1",sans-serif;
+  /* margin-top:0px;
+  margin-bottom: 0px;不加这两句不知道为什么上下分一定条件，下面有，或上下都有白条 */
+  
+  line-height: 130px;
+}
+.yes {
+  line-height: 130px;
+  color:#008001;
+  font-size: 49px;
+  font-weight:bold;
+  font-family: "\5FAE\8F6F\96C5\9ED1",sans-serif;
+  margin-top:0;
+  margin-bottom: 0;
+}
+
+
+
+.flash {
+  height: 130px;
+}
+
+.flash-center {
+  height: 90px;
+  width: 1000px;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.bottom {
+  position: fixed;
+  bottom: 0px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
